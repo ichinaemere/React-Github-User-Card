@@ -24,10 +24,10 @@ const UserCard = (props) => {
     return (
         <Card>
             <CardActionArea>
-                            <CardMedia
+                            <CardMedia style={{width: "50%", margin: "0 auto"}}
                                 className={classes.media} image={props.userData.avatar_url} alt="github-pic"/>
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">{props.userData.name}</Typography>
+                                <Typography style={{margin: '0 auto'}}gutterBottom variant="h5" component="h2">{props.userData.name}</Typography>
                                 <Typography gutterBottom variant="h5" component="h2">{props.userData.login}</Typography>
                             </CardContent>
                         </CardActionArea>
